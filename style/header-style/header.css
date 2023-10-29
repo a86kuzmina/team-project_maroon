@@ -1,0 +1,30 @@
+@import url("https://fonts.googleapis.com/css2?family=M+PLUS+1p:wght@400;500&family=Raleway:wght@500&display=swap");
+body {
+  max-width: 100%;
+}
+body a {
+  text-decoration: none;
+}
+
+.header {
+  display: flex;
+  background-color: #F8F8F6;
+  height: 10vh;
+  justify-content: space-between;
+  padding: 0 10% 0 10%;
+  align-items: center;
+}
+
+.menu__link {
+  color: #122947;
+  font-size: 1rem;
+  font-weight: 400;
+  font-family: "MPLUS1p", sans-serif;
+  margin: 1rem;
+}
+
+.menu__link-img {
+  max-width: 16px;
+  width: 100%;
+  height: auto;
+}/*# sourceMappingURL=header.css.map */
