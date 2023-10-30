@@ -98,6 +98,17 @@ h4 {
   word-wrap: break-word;
 }
 
+.click {
+  float: right;
+  border-radius: 1rem;
+}
+
+.container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  font-family: "MPLUS1p", sans-serif;
+}
+
 .catalog {
   height: 80%;
   width: 80%;

@@ -91,71 +91,89 @@ h4 {
         }
         }
 }
-.catalog{
-    height: 80%;
-    width: 80%;
-    margin: auto;
+.click{
+    float: right;
+    border-radius: 1rem;
+}
+.container{
     display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(250px, auto));
-    grid-template-rows: repeat(5, 25rem);
-    gap: 30px;
+    grid-template-columns: repeat(3, 1fr);
+    font-family: $font2;
+
+}
+.catalog{
+height: 80%;
+width: 80%;
+margin: auto;
+display: grid;
+grid-template-columns: repeat(auto-fill, minmax(250px, auto));
+
+grid-template-rows: repeat(5, 25rem);
+gap: 30px;
+font-family: $font2;
+
+
+
 }
 .card{
-    width: 100%;
-    height: 100%;
-    display: grid;
-    grid-template-columns: 3fr 1fr;
-    align-content: end;
-    padding-left: 3%;
-    grid-template-rows: repeat(2, 40px);
-    background-size: 100% 100%;
+width: 100%;
+height: 100%;
+display: grid;
+grid-template-columns: 3fr 1fr;
+align-content: end;
+padding-left: 3%;
+grid-template-rows: repeat(2, 40px);
+background-size: 100% 100%;
+
+
 }
 .card1_body, .card1_weight{
-    color: #9A9DA0;
-    }
+color: #9A9DA0;
+
+}
 ul, li, h1, .cl, .click, .card1_title, .card1_price {
-    color: #122947;
-    }
+color: #122947;
+}
 .left, .right{
-    width: 20px;
-    height: 20px;
-    position: relative;
-    display: inline-flex;
-    cursor: pointer;
+width: 20px;
+height: 20px;
+position: relative;
+display: inline-flex;
+cursor: pointer;
 }
 .left::before,
 .right::before,
 .left::after,
 .right::after{
-    content: '';
-    position: absolute;
+content: '';
+position: absolute;
 }
-    .left::before,
-    .right::before{
-    width: 20px;
-    height: 3px;
-    background-color: gray;
-    top: 9px;
-    }
-    .left::after,
-    .right::after{
-    width: 15px;
-    height: 15px;
-    }
-    .left::after{
-    border-top: 2px solid gray;
-    border-left: 2px solid gray;
-    transform: rotate(-45deg);
-    top: 2px;
-    left: 2px;
-    }
-    .right::after{
-    border-top: 2px solid gray;
-    border-right: 2px solid gray;
-    transform: rotate(45deg);
-    top: 2px;
-    right: 2px;
-    }
+.left::before,
+.right::before{
+width: 20px;
+height: 3px;
+background-color: gray;
+top: 9px;
+}
+.left::after,
+.right::after{
+width: 15px;
+height: 15px;
+}
+.left::after{
+border-top: 2px solid gray;
+border-left: 2px solid gray;
+transform: rotate(-45deg);
+top: 2px;
+left: 2px;
+}
+.right::after{
+border-top: 2px solid gray;
+border-right: 2px solid gray;
+transform: rotate(45deg);
+top: 2px;
+right: 2px;
+}
     h4 {
         font-weight: 500;
         font-size: 1.2rem;
