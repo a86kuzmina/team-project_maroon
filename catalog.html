@@ -1,11 +1,283 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-</head>
-<body>
-    
-</body>
+    <link rel="stylesheet" href="/style/catalog-style/catalog.css" />
+  </head>
+  <body>
+    <header class="header">
+      <div class="header__logo">
+        <img src="/assets/header/MAROON.png" class="logo__img" alt="Logo" />
+      </div>
+      <nav class="header__menu">
+        <a href="#" class="menu__link">Каталог</a>
+        <a href="#" class="menu__link">О нас</a>
+        <a href="#" class="menu__link">Контакты</a>
+        <a href="#" class="menu__link menu__link-img"
+          ><img src="/assets/header/body.png" alt="People"
+        /></a>
+        <a href="#" class="menu__link menu__link-img"
+          ><img src="/assets/header/basket.png" alt="Basket"
+        /></a>
+      </nav>
+    </header>
+    <main>
+      <div class="name">
+        <h2>Каталог</h2>
+        <button class="click">Фильтр</button>
+      </div>
+      <div class="catalog">
+        <div
+          class="card"
+          style="background-image: url(/assets/catalog/Rectangle43.png)"
+        >
+          <h4 class="card1_title">High</h4>
+          <p class="card1_price">990 &#8381;</p>
+          <p class="card1_body">крем для лица</p>
+          <p class="card1_weight">50ml</p>
+        </div>
+        <div
+          class="card"
+          style="background-image: url(/assets/catalog/Rectangle44.png)"
+        >
+          <h4 class="card1_title">Rest</h4>
+          <p class="card1_price">690 &#8381;</p>
+          <p class="card1_body">крем для лица</p>
+          <p class="card1_weight">20g</p>
+        </div>
+        <div
+          class="card"
+          style="background-image: url(/assets/catalog/Rectangle45.png)"
+        >
+          <h4 class="card1_title">Rose</h4>
+          <p class="card1_price">890 &#8381;</p>
+          <p class="card1_body">минеральная пудра</p>
+          <p class="card1_weight">50ml</p>
+        </div>
+        <div
+          class="card"
+          style="background-image: url(/assets/catalog/Rectangle46.png)"
+        >
+          <h4 class="card1_title">Milk</h4>
+          <p class="card1_price">790 &#8381;</p>
+          <p class="card1_body">масло для тела</p>
+          <p class="card1_weight">150ml</p>
+        </div>
+        <div
+          class="card"
+          style="background-image: url(/assets/catalog/Rectangle47.png)"
+        >
+          <h4 class="card1_title">Paradise</h4>
+          <p class="card1_price">590 &#8381;</p>
+          <p class="card1_body">минеральная пудра</p>
+          <p class="card1_weight">15g</p>
+        </div>
+        <div
+          class="card"
+          style="background-image: url(/assets/catalog/BathBomb1.png)"
+        >
+          <h4 class="card1_title">Sun</h4>
+          <p class="card1_price">90 &#8381;</p>
+          <p class="card1_body">бомбочка для ванны</p>
+          <p class="card1_weight">20g</p>
+        </div>
+        <div
+          class="card"
+          style="background-image: url(/assets/catalog/Rectangle49.png)"
+        >
+          <h4 class="card1_title">Violet</h4>
+          <p class="card1_price">890 &#8381;</p>
+          <p class="card1_body">крем для лица</p>
+          <p class="card1_weight">50ml</p>
+        </div>
+        <div
+          class="card"
+          style="background-image: url(/assets/catalog/Rectangle50.png)"
+        >
+          <h4 class="card1_title">Clean</h4>
+          <p class="card1_price">490 &#8381;</p>
+          <p class="card1_body">маска для лица</p>
+          <p class="card1_weight">100g</p>
+        </div>
+        <div
+          class="card"
+          style="background-image: url(/assets/catalog/Rectangle51.png)"
+        >
+          <h4 class="card1_title">Сoconut</h4>
+          <p class="card1_price">990 &#8381;</p>
+          <p class="card1_body">масло для тела</p>
+          <p class="card1_weight">300ml</p>
+        </div>
+        <div
+          class="card"
+          style="background-image: url(/assets/catalog/Rectangle53.png)"
+        >
+          <h4 class="card1_title">Lavender</h4>
+          <p class="card1_price">290 &#8381;</p>
+          <p class="card1_body">масло ручной работы</p>
+          <p class="card1_weight">50g</p>
+        </div>
+        <div
+          class="card"
+          style="background-image: url(/assets/catalog/Rectangle52.png)"
+        >
+          <h4 class="card1_title">Lotos</h4>
+          <p class="card1_price">890 &#8381;</p>
+          <p class="card1_body">маска для лица</p>
+          <p class="card1_weight">50ml</p>
+        </div>
+        <div
+          class="card"
+          style="background-image: url(/assets/catalog/BathBomb2.png)"
+        >
+          <h4 class="card1_title">Earth</h4>
+          <p class="card1_price">90 &#8381;</p>
+          <p class="card1_body">бомбочка для ванны</p>
+          <p class="card1_weight">20g</p>
+        </div>
+        <div class="left"></div>
+        <!--Для чего нужны эти тэги? может их удалить?-->
+        <div class="right"></div>
+        <!--Для чего нужны эти тэги? может их удалить?-->
+      </div>
+      <h2>Вы недавно смотрели</h2>
+      <div class="catalog">
+        <div
+          class="card"
+          style="background-image: url(/assets/catalog/Rectangle54.png)"
+        >
+          <h4 class="card__title">Clean</h4>
+          <p class="card__price">490 &#8381;</p>
+          <p class="card__body">маска для лица</p>
+          <p class="card__weight">100g</p>
+        </div>
+        <div
+          class="card"
+          style="background-image: url(/assets/catalog/Rectangle55.png)"
+        >
+          <h4 class="card__title">Lotos</h4>
+          <p class="card__price">890 &#8381;</p>
+          <p class="card__body">маска для лица</p>
+          <p class="card__weight">50ml</p>
+        </div>
+        <div
+          class="card"
+          style="background-image: url(/assets/catalog/Rectangle56.png)"
+        >
+          <h4 class="card__title">Lavander</h4>
+          <p class="card__price">290 &#8381;</p>
+          <p class="card__body">мыло ручной работы</p>
+          <p class="card__weight">50g</p>
+        </div>
+        <div
+          class="card"
+          style="background-image: url(/assets/catalog/Rectangle57.png)"
+        >
+          <h4 class="card__title">Coconut</h4>
+          <p class="card__price">990 &#8381;</p>
+          <p class="card__body">масло для тела</p>
+          <p class="card__weight">300ml</p>
+        </div>
+      </div>
+      <div class="content3">
+        <div class="content3__image">
+          <div class="image">
+            <img src="/assets/main_page/1.png" alt="Image 1" />
+          </div>
+          <div class="image">
+            <img src="/assets/main_page/2.png" alt="Image 2" />
+          </div>
+          <div class="image">
+            <img src="/assets/main_page/3.png" alt="Image 3" />
+          </div>
+          <div class="image">
+            <img src="/assets/main_page/4.png" alt="Image 4" />
+          </div>
+          <div class="image">
+            <img src="/assets/main_page/5.png" alt="Image 5" />
+          </div>
+          <div class="image">
+            <img src="/assets/main_page/6.png" alt="Image 6" />
+          </div>
+        </div>
+        <div class="content3__all">
+          <h2>Присоединяйтесь к нам</h2>
+          <br />
+          <p>
+            Подпишитесь на наш аккаунт @marooncare<br />
+            и узнавайте о новинках и акциях первыми
+          </p>
+          <br />
+          <button class="content3__button">
+            <span class="button-text">Подписаться</span>
+          </button>
+        </div>
+      </div>
+      <div class="contacts">
+        <div class="contacts__info">
+          <h2 class="contacts__title">Контакты</h2>
+          <div class="contacts__adress">
+            <h3>Адрес</h3>
+            <p>Санкт-Петербург, ул. Большая Конюшенная, 19</p>
+          </div>
+          <div class="contacts__phone">
+            <h3>Телефон</h3>
+            <p>+7 (923) 888-90-60</p>
+          </div>
+          <div class="contacts__email">
+            <h3>E-mail</h3>
+            <p>info@maroon.ru</p>
+          </div>
+          <div class="contacts__social">
+            <a href="#" class="social__link">
+              <img src="./assets/footer/facebook.png" alt="Facebook" />
+            </a>
+            <a href="#" class="social__link">
+              <img src="./assets/footer/insta.png" alt="Instagram" />
+            </a>
+            <a href="#" class="social__link">
+              <img src="./assets/footer/twit.png" alt="Twitter" />
+            </a>
+          </div>
+        </div>
+        <div class="contacts__img">
+          <img
+            src="./assets/main_page/map.png"
+            alt="map"
+            class="contacts__pic"
+          />
+        </div>
+      </div>
+    </main>
+    <footer class="footer">
+      <div class="footer__top">
+        <div class="footer__logo">
+          <img src="./assets/footer/MAROON.png" class="logo__img" alt="Logo" />
+        </div>
+        <nav class="footer__menu">
+          <a href="#" class="menu__link">Каталог</a>
+          <a href="#" class="menu__link">О нас</a>
+          <a href="#" class="menu__link">Магазины</a>
+          <a href="#" class="menu__link">Контакты</a>
+        </nav>
+        <div class="footer__social">
+          <a href="#" class="social__link">
+            <img src="./assets/footer/facebook.png" alt="Facebook" />
+          </a>
+          <a href="#" class="social__link">
+            <img src="/assets/footer/insta.png" alt="Instagram" />
+          </a>
+          <a href="#" class="social__link">
+            <img src="/assets/footer/twit.png" alt="Twitter" />
+          </a>
+        </div>
+      </div>
+      <div class="footer__bottom">
+        <div class="bottom__left">MAROON &copy; 2020 Все права защищены</div>
+        <div class="bottom__right">Политика конфиденциальности</div>
+      </div>
+    </footer>
+  </body>
 </html>
