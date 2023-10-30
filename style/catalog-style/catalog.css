@@ -52,6 +52,11 @@ h3 {
   line-height: 145%;
 }
 
+h4 {
+  font-weight: 500;
+  font-size: 1.2rem;
+}
+
 .header {
   display: grid;
   grid-template-columns: 1fr 50vw 1fr;
