@@ -2,29 +2,30 @@
 body {
   max-width: 100%;
 }
-body a {
-  text-decoration: none;
-}
 
 .header {
   display: flex;
-  background-color: #F8F8F6;
   height: 10vh;
-  justify-content: space-between;
+  justify-content: flex-end;
   padding: 0 10% 0 10%;
   align-items: center;
+  border-bottom: 1px solid #D1D1D1;
+}
+.header .header__logo {
+  margin-right: auto;
+}
+.header .header__menu {
+  margin-right: 10%;
 }
 
 .menu__link {
   color: #122947;
   font-size: 1rem;
   font-weight: 400;
-  font-family: "MPLUS1p", sans-serif;
+  font-family: "M plus 1p", sans-serif;
   margin: 1rem;
 }
 
-.menu__link-img {
-  max-width: 16px;
-  width: 100%;
-  height: auto;
+.link {
+  text-decoration: none;
 }/*# sourceMappingURL=header.css.map */

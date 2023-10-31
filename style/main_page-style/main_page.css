@@ -12,7 +12,7 @@ body {
   border: 1px solid #B3BAC1;
   background-color: #F8F8F6;
   color: #122947;
-  font-family: "MPLUS1p", sans-serif;
+  font-family: "M plus 1p", sans-serif;
   font-size: 1rem;
   font-style: normal;
   font-weight: 500;
@@ -26,7 +26,7 @@ body {
 
 * p {
   color: #122947;
-  font-family: "MPLUS1p", sans-serif;
+  font-family: "M plus 1p", sans-serif;
   font-size: 1.2rem;
   font-style: normal;
   font-weight: 400;
@@ -52,25 +52,30 @@ h3 {
 }
 
 .header {
-  display: grid;
-  grid-template-columns: 1fr 50vw 1fr;
-  background-color: #F8F8F6;
+  display: flex;
   height: 10vh;
-  justify-items: end;
+  justify-content: flex-end;
   padding: 0 10% 0 10%;
   align-items: center;
   border-bottom: 1px solid #D1D1D1;
 }
 .header .header__logo {
-  justify-self: start;
+  margin-right: auto;
+}
+.header .header__menu {
+  margin-right: 10%;
 }
 
 .menu__link {
   color: #122947;
   font-size: 1rem;
   font-weight: 400;
-  font-family: "MPLUS1p", sans-serif;
+  font-family: "M plus 1p", sans-serif;
   margin: 1rem;
+}
+
+.link {
+  text-decoration: none;
 }
 
 .mainpage {
@@ -103,7 +108,7 @@ h3 {
 .mainpage .mainpage__container .mainpage__img .mainpage__img-text p {
   grid-column: 1/2;
   color: #122947;
-  font-family: "MPLUS1p", sans-serif;
+  font-family: "M plus 1p", sans-serif;
   font-size: 1.3rem;
   font-style: normal;
   font-weight: 500;
@@ -175,7 +180,7 @@ h3 {
 }
 .best-seller .best-seller__container .best-seller__grCards .best-seller__card p {
   color: #9A9DA0;
-  font-family: "MPLUS1p", sans-serif;
+  font-family: "M plus 1p", sans-serif;
   font-size: 1rem;
   font-style: normal;
   font-weight: 400;
@@ -183,7 +188,7 @@ h3 {
 }
 .best-seller .best-seller__container .best-seller__grCards .best-seller__card a {
   color: #122947;
-  font-family: "MPLUS1p", sans-serif;
+  font-family: "M plus 1p", sans-serif;
   font-size: 0.9rem;
   font-style: normal;
   font-weight: 400;
@@ -245,7 +250,7 @@ h3 {
 .content1 .content1__text p {
   color: #122947;
   font-size: 18px;
-  font-family: "MPLUS1p", sans-serif;
+  font-family: "M plus 1p", sans-serif;
   font-weight: 400;
   line-height: 26.1px;
   word-wrap: break-word;
@@ -259,7 +264,7 @@ h3 {
 .content1 .content1__text .content1__button .button-text {
   color: #122947;
   font-size: 16px;
-  font-family: "MPLUS1p", sans-serif;
+  font-family: "M plus 1p", sans-serif;
   font-weight: 500;
   line-height: 22.4px;
   word-wrap: break-word;
@@ -300,7 +305,7 @@ h3 {
 .content2 button .button-text {
   color: #122947;
   font-size: 16px;
-  font-family: "MPLUS1p", sans-serif;
+  font-family: "M plus 1p", sans-serif;
   font-weight: 500;
   line-height: 22.4px;
   word-wrap: break-word;
@@ -329,7 +334,7 @@ h3 {
 .content3 .content3__all p {
   color: #122947;
   font-size: 18px;
-  font-family: "MPLUS1p", sans-serif;
+  font-family: "M plus 1p", sans-serif;
   font-weight: 400;
   line-height: 26.1px;
   word-wrap: break-word;
@@ -343,26 +348,23 @@ h3 {
 .content3 .content3__button .button-text {
   color: #122947;
   font-size: 16px;
-  font-family: "MPLUS1p", sans-serif;
+  font-family: "M plus 1p", sans-serif;
   font-weight: 500;
   line-height: 22.4px;
   word-wrap: break-word;
 }
 
 .contacts {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  grid-template-rows: 1fr;
+  display: flex;
   width: 80%;
-  height: 50%;
+  height: 50vh;
   margin: 2% auto;
 }
 .contacts .contacts__info {
-  width: 100%;
-  padding: 10%;
-  height: auto;
+  width: 50%;
+  padding: 5%;
   background-color: #F4F1ED;
-  font-family: "MPLUS1p", sans-serif;
+  font-family: "M plus 1p", sans-serif;
   font-size: 1rem;
   font-weight: 400;
 }
@@ -371,12 +373,13 @@ h3 {
   font-weight: 500;
   font-size: 2rem;
 }
-.contacts .contacts__img {
-  width: 80%;
-  margin: auto;
+
+.contacts__img {
+  transform: translateX(-15%);
+  margin: auto 0;
 }
-.contacts .contacts__img .contacts__pic {
-  width: 100%;
+.contacts__img .contacts__pic {
+  width: 115%;
 }
 
 .footer {
@@ -387,29 +390,115 @@ h3 {
 }
 
 .footer__top {
-  display: grid;
-  grid-template-columns: 1fr 50vw 1fr;
+  display: flex;
+  justify-items: flex-start;
   align-items: center;
   padding: 0 10% 0 10%;
 }
 .footer__top .footer__social {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  justify-items: end;
+  margin-left: auto;
+}
+
+.footer__menu {
+  margin-left: 10%;
 }
 
 .footer__bottom {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  justify-items: stretch;
+  display: flex;
+  justify-content: space-between;
   align-items: center;
   padding: 0 10% 0 10%;
-  font-family: "MPLUS1p", sans-serif;
+  font-family: "M plus 1p", sans-serif;
   color: #959595;
   font-size: 0.7rem;
   font-weight: 400;
   border-top: solid 1px #D1D1D1;
 }
 .footer__bottom .bottom__right {
-  justify-self: end;
+  margin: auto;
+}
+
+@media screen and (max-width: 768px) {
+  .header__menu {
+    order: -1;
+    justify-self: flex-start;
+  }
+  .header__menu a:not(:first-child) {
+    display: none;
+  }
+  .header__logo {
+    margin: auto;
+  }
+  .contacts {
+    background-color: #F4F1ED;
+    height: 70vh;
+  }
+  .contacts .contacts__img {
+    box-sizing: border-box;
+    width: 45vw;
+    padding-right: 0;
+  }
+  .footer__menu {
+    margin-left: 0;
+  }
+}
+@media screen and (min-width: 481px) {
+  .contacts__social {
+    display: none;
+  }
+}
+@media screen and (max-width: 480px) {
+  .header {
+    padding: 0 5% 0 5%;
+  }
+  .header .header__menu {
+    margin: 0;
+  }
+  .header .header__logo-img {
+    max-width: 85px;
+  }
+  .contacts {
+    flex-direction: column;
+    height: 120vh;
+  }
+  .contacts .contacts__info {
+    box-sizing: border-box;
+  }
+  .contacts .contacts__img {
+    width: 100%;
+    background-color: white;
+    margin: auto 0 0 0;
+    transform: translateX(0);
+  }
+  .contacts .contacts__img .contacts__pic {
+    width: 100%;
+  }
+  .footer {
+    height: 60vh;
+    padding: 0 5% 0 5%;
+  }
+  .footer__top {
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: flex-start;
+  }
+  .footer__top .footer__menu {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    margin: 0;
+  }
+  .footer__top .footer__menu .menu__link {
+    margin-left: 0;
+  }
+  .footer__top .footer__social {
+    margin: 0;
+  }
+  .footer__bottom {
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: flex-start;
+  }
+  .footer__bottom .bottom__right {
+    justify-self: start;
+  }
 }/*# sourceMappingURL=main_page.css.map */

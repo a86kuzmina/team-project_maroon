@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=M+PLUS+1p:wght@400;500&family=Raleway:wght@500&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@600&family=Poppins:wght@700&family=Raleway:wght@500&display=swap');
-$mainFont: 'Raleway', sans-serif;
-$font2: 'MPLUS1p', sans-serif;
+$Font1: 'Raleway', sans-serif;
+$Font2: 'M plus 1p', sans-serif;
 
 body {
     max-width: 100%;
@@ -14,7 +14,7 @@ body {
     border: 1px solid #B3BAC1;
     background-color: #F8F8F6;
     color: #122947;
-    font-family: $font2;
+    font-family: $Font2;
     font-size: 1rem;
     font-style: normal;
     font-weight: 500;
@@ -26,7 +26,7 @@ body {
 }
 * p{
     color: #122947;
-    font-family: $font2;
+    font-family: $Font2;
     font-size: 1.2rem;
     font-style:normal;
     font-weight: 400;
@@ -34,7 +34,7 @@ body {
 }
 h2{
     color: #122947;
-    font-family: $mainFont;
+    font-family: $Font1;
     font-size: 2.4rem;
     font-style: normal;
     font-weight: 500;
@@ -42,31 +42,35 @@ h2{
 }
 h3{
     color: #122947;
-    font-family: $mainFont;
+    font-family: $Font1;
     font-size: 1.2rem;
     font-style: normal;
     font-weight: 500;
     line-height: 145%; 
 }
 .header {
-    display: grid;
-    grid-template-columns: 1fr 50vw 1fr;
-    background-color: #F8F8F6;
+    display: flex;
     height: 10vh;
-    justify-items: end;
+    justify-content: flex-end;
     padding: 0 10% 0 10%;
     align-items: center;
     border-bottom: 1px solid #D1D1D1; 
     .header__logo {
-        justify-self: start;
+        margin-right: auto;
+    }
+    .header__menu {
+        margin-right: 10%;
     }
 }
 .menu__link {
     color: #122947;
     font-size: 1rem;
     font-weight: 400;
-    font-family: $font2;
+    font-family: $Font2;
     margin: 1rem;
+}
+.link {
+    text-decoration: none;
 }
 .mainpage{
     background-image: url(/assets/main_page/Rectangle35.png);
@@ -94,7 +98,7 @@ h3{
                     p {
                     grid-column:1/2;
                     color: #122947;
-                    font-family:$font2;
+                    font-family:$Font2;
                     font-size: 1.3rem;
                     font-style: normal;
                     font-weight: 500;
@@ -117,7 +121,7 @@ h3{
                 h1{
                 margin-bottom: 0%;
                 color: #122947;
-            font-family:$mainFont;
+            font-family:$Font1;
             font-size: 4rem;
             font-style: normal;
             font-weight: 500;
@@ -165,7 +169,7 @@ h3{
                 gap:8px;
                     p {
                     color: #9A9DA0;
-                    font-family:$font2;
+                    font-family:$Font2;
                     font-size: 1rem;
                     font-style: normal;
                     font-weight: 400;
@@ -173,7 +177,7 @@ h3{
                 }
                     a {
                         color: #122947;
-                        font-family:$font2;
+                        font-family:$Font2;
                         font-size: 0.9rem;
                         font-style: normal;
                         font-weight: 400;
@@ -235,7 +239,7 @@ h3{
         p {
             color: #122947;
             font-size: 18px;
-            font-family: $font2;
+            font-family: $Font2;
             font-weight: 400;
             line-height: 26.10px;
             word-wrap: break-word;
@@ -248,7 +252,7 @@ h3{
             .button-text {
                 color: #122947;
                 font-size: 16px;
-                font-family: $font2;
+                font-family: $Font2;
                 font-weight: 500;
                 line-height: 22.40px;
                 word-wrap: break-word;
@@ -274,7 +278,7 @@ h3{
     p{
         color: #122947;
         font-size: 32px;
-        font-family: $mainFont;
+        font-family: $Font1;
         font-weight: 500;
         line-height: 40px;
         word-wrap: break-word;
@@ -289,7 +293,7 @@ h3{
         .button-text{
             color: #122947;
             font-size: 16px;
-            font-family: $font2;
+            font-family: $Font2;
             font-weight: 500;
             line-height: 22.40px;
             word-wrap: break-word;
@@ -317,7 +321,7 @@ h3{
         p {
             color: #122947;
             font-size: 18px;
-            font-family: $font2;
+            font-family: $Font2;
             font-weight: 400;
             line-height: 26.10px;
             word-wrap: break-word;
@@ -331,7 +335,7 @@ h3{
         .button-text {
             color: #122947;
             font-size: 16px;
-            font-family: $font2;
+            font-family: $Font2;
             font-weight: 500;
             line-height: 22.40px;
             word-wrap: break-word;
@@ -339,34 +343,32 @@ h3{
     }
 }
 .contacts {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: 1fr;
+    display: flex;
     width: 80%;
-    height: 50%;
+    height: 50vh;
     margin: 2% auto;
     .contacts__info {
-        width: 100%;
-        padding: 10%;
-        height: auto;
+        width: 50%;
+        padding: 5%;
         background-color: #F4F1ED;
-        font-family: $font2;
+        font-family: $Font2;
         font-size: 1rem;
         font-weight: 400;
         .contacts__title {
-            font-family: $mainFont;
+            font-family: $Font1;
             font-weight: 500;
             font-size: 2rem;
         }
     }
-    .contacts__img {
-        width: 80%;
-        margin: auto;
-        .contacts__pic {
-            width: 100%;
-        }
+}
+.contacts__img {
+    transform: translateX(-15%);
+    margin: auto 0;
+    .contacts__pic {
+        width: 115%;
     }
 }
+
 .footer {
     display: grid;
     grid-template-rows: 3fr 1fr;
@@ -374,30 +376,116 @@ h3{
     height: 20vh;
 }
 .footer__top {
-        display: grid;
-        grid-template-columns: 1fr 50vw 1fr;
-        align-items: center;
-        padding: 0 10% 0 10%;
-        .footer__social {
-            display: grid;
-            grid-template-columns: repeat(3, 1fr);
-            justify-items: end;
-        }
-    }
-.footer__bottom {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    justify-items: stretch;
+    display: flex;
+    justify-items: flex-start;
     align-items: center;
     padding: 0 10% 0 10%;
-    font-family: $font2;
+    .footer__social {
+        margin-left: auto;
+    }
+}
+.footer__menu {
+    margin-left: 10%;
+}
+.footer__bottom {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 10% 0 10%;
+    font-family: $Font2;
     color: #959595;
     font-size: 0.7rem;
     font-weight: 400;
     border-top: solid 1px #D1D1D1;
     .bottom__right {
-        justify-self: end;
+        margin: auto;
     }
 }
 
 
+@media screen and (max-width: 768px) {
+    .header__menu {
+        order: -1;
+        justify-self: flex-start;
+        a:not(:first-child) {
+            display: none;
+        }
+    }
+    .header__logo {
+        margin: auto;
+    }
+    .contacts {
+        background-color: #F4F1ED;
+        height: 70vh;
+        .contacts__img {
+            box-sizing: border-box;
+            width: 45vw;
+            padding-right: 0;
+        }
+    }
+    .footer__menu {
+        margin-left: 0;
+    }
+}
+
+@media screen and (min-width: 481px) {
+    .contacts__social {
+        display: none;
+    }
+}
+@media screen and (max-width: 480px) {
+    .header {
+    padding: 0 5% 0 5%;
+    .header__menu {
+        margin: 0;
+    }
+    .header__logo-img {
+        max-width: 85px;
+    }
+    }
+
+    .contacts {
+        flex-direction: column;
+        height: 120vh;
+        .contacts__info {
+            box-sizing: border-box;
+        }
+        .contacts__img {
+            width: 100%;
+            background-color: white;
+            margin: auto 0 0 0;
+            transform: translateX(0);
+            .contacts__pic {
+                width: 100%;
+            }
+        }
+    }
+    .footer {
+        height: 60vh;
+        padding: 0 5% 0 5%;
+    }
+    .footer__top {
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: flex-start;
+        .footer__menu {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            margin: 0;
+            .menu__link {
+                margin-left: 0;
+            }
+        }
+        .footer__social {
+            margin: 0;
+        }
+    }
+    .footer__bottom {
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: flex-start;
+        .bottom__right {
+            justify-self: start;
+        }
+    }
+}

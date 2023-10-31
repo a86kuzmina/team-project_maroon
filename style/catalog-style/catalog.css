@@ -117,6 +117,7 @@ h4 {
   grid-template-columns: repeat(auto-fill, minmax(250px, auto));
   grid-template-rows: repeat(5, 25rem);
   gap: 30px;
+  font-family: "MPLUS1p", sans-serif;
 }
 
 .card {
