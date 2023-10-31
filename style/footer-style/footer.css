@@ -44,4 +44,40 @@
 }
 .footer__bottom .bottom__right {
   margin: auto;
+}
+
+@media screen and (max-width: 768px) {
+  .footer__menu {
+    margin-left: 0;
+  }
+}
+@media screen and (max-width: 480px) {
+  .footer {
+    height: 60vh;
+    padding: 0 5% 0 5%;
+  }
+  .footer__top {
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: flex-start;
+  }
+  .footer__top .footer__menu {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    margin: 0;
+  }
+  .footer__top .footer__menu .menu__link {
+    margin-left: 0;
+  }
+  .footer__top .footer__social {
+    margin: 0;
+  }
+  .footer__bottom {
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: flex-start;
+  }
+  .footer__bottom .bottom__right {
+    justify-self: start;
+  }
 }/*# sourceMappingURL=footer.css.map */

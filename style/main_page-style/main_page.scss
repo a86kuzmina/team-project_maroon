@@ -368,7 +368,6 @@ h3{
         width: 115%;
     }
 }
-
 .footer {
     display: grid;
     grid-template-rows: 3fr 1fr;
@@ -401,8 +400,6 @@ h3{
         margin: auto;
     }
 }
-
-
 @media screen and (max-width: 768px) {
     .header__menu {
         order: -1;
@@ -427,7 +424,6 @@ h3{
         margin-left: 0;
     }
 }
-
 @media screen and (min-width: 481px) {
     .contacts__social {
         display: none;
@@ -443,7 +439,6 @@ h3{
         max-width: 85px;
     }
     }
-
     .contacts {
         flex-direction: column;
         height: 120vh;

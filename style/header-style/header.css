@@ -28,4 +28,28 @@ body {
 
 .link {
   text-decoration: none;
+}
+
+@media screen and (max-width: 768px) {
+  .header__menu {
+    order: -1;
+    justify-self: flex-start;
+  }
+  .header__menu a:not(:first-child) {
+    display: none;
+  }
+  .header__logo {
+    margin: auto;
+  }
+}
+@media screen and (max-width: 480px) {
+  .header {
+    padding: 0 5% 0 5%;
+  }
+  .header .header__menu {
+    margin: 0;
+  }
+  .header .header__logo-img {
+    max-width: 85px;
+  }
 }/*# sourceMappingURL=header.css.map */

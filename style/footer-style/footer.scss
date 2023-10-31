@@ -44,5 +44,41 @@ $Font2: 'M plus 1p', sans-serif;
         margin: auto;
     }
 }
+@media screen and (max-width: 768px) {
+    .footer__menu {
+        margin-left: 0;
+    }
+}
+@media screen and (max-width: 480px) {
+    .footer {
+        height: 60vh;
+        padding: 0 5% 0 5%;
+    }
+    .footer__top {
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: flex-start;
+        .footer__menu {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            margin: 0;
+            .menu__link {
+                margin-left: 0;
+            }
+        }
+        .footer__social {
+            margin: 0;
+        }
+    }
+    .footer__bottom {
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: flex-start;
+        .bottom__right {
+            justify-self: start;
+        }
+    }
+}
+
 
 
