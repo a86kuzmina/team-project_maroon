@@ -53,29 +53,39 @@
     <main class="main">
       <div class="mainpage">
         <div class="mainpage__container">
-          <div class="mainpage__img">
-            <img src="/assets/main_page/8.png" alt="cream" />
-            <div class="mainpage__img-text">
-              <p>Уход для лица</p>
-              <a href=""
-                ><img src="/assets/main_page/Vector1.png" alt="arrow"
+          <div class="mainpage__item">
+            <img
+              class="mainpage__img"
+              src="./assets/main_page/8.png"
+              alt="img"
+            />
+            <div class="mainpage__item-text">
+              <p class="p mainpage__description">Уход для лица</p>
+              <a class="link mainpage__link" href=""
+                ><img src="./assets/main_page/Vector1.png" alt="arrow"
               /></a>
             </div>
           </div>
           <div class="mainpage__text">
-            <h1>MAROON</h1>
-            <p class="mainpage__text">
+            <h1 class="h1 mainpage__title">MAROON</h1>
+            <p class="p mainpage__description">
               Натуральная косметика <br />
               для бережного ухода за кожей
             </p>
-            <button class="btn" type="button">Подробнее</button>
+            <button class="btn mainpage_button" type="button">
+              <a class="link" href="">Подробнее</a>
+            </button>
           </div>
-          <div class="mainpage__img">
-            <img src="/assets/main_page/9.png" alt="cream" />
-            <div class="mainpage__img-text">
-              <p>Уход для тела</p>
-              <a href="#"
-                ><img src="/assets/main_page/Vector2.png" alt="arrow"
+          <div class="mainpage__item">
+            <img
+              class="mainpage__img"
+              src="./assets/main_page/9.png"
+              alt="img"
+            />
+            <div class="mainpage__item-text">
+              <p class="mainpage__description p">Уход для тела</p>
+              <a class="mainpage__link link" href=""
+                ><img src="./assets/main_page/Vector1.png" alt="arrow"
               /></a>
             </div>
           </div>
@@ -84,50 +94,78 @@
       <div class="best-seller">
         <div class="best-seller__container">
           <div class="best-seller__text">
-            <h2>Бестселлеры</h2>
-            <p>Легендарные продукты, завоевавшие любовь наших клиентов</p>
-            <button type="button" class="btn">Смотреть все</button>
-          </div>
-          <div class="best-seller__grCards">
-            <div
-              class="best-seller__card"
-              style="background-image: url(./assets/main_page/high.png)"
-            >
-              <h3>High</h3>
-              <p>крем для лица</p>
-              <a href="#">Подробнее</a>
-            </div>
-            <div
-              class="best-seller__card"
-              style="background-image: url(./assets/main_page/rest.png)"
-            >
-              <h3>Rest</h3>
-              <p>минеральная пудра</p>
-              <a href="">Подробнее</a>
-            </div>
-            <div
-              class="best-seller__card"
-              style="background-image: url(./assets/main_page/rose.png)"
-            >
-              <h3>Rose</h3>
-              <p>крем для лица</p>
-              <a href="#">Подробнее</a>
-            </div>
-            <div
-              class="best-seller__card"
-              style="background-image: url(/assets/main_page/milk.png)"
-            >
-              <h3>Milk</h3>
-              <p>масло для тела</p>
-              <a href="#">Подробнее</a>
-            </div>
-          </div>
-          <div class="best-seller__img-vector">
-            <button type="button" class="btn_vect btn_right">
-              <img src="/assets/main_page/Vector4.png" alt="arrow" />
+            <h2 class="best-seller__title h2">Бестселлеры</h2>
+            <p class="best-seller__description p">
+              Легендарные продукты, завоевавшие любовь наших клиентов
+            </p>
+            <button type="button" class="best-seller__button btn">
+              <a class="best-seller__link link" href="">Смотреть все</a>
             </button>
-            <button type="button" class="btn_vect btn_left">
-              <img src="/assets/main_page/Vector3.png" alt="arrow" />
+          </div>
+          <div class="best-seller__grcards">
+            <div class="best-seller__card">
+              <img
+                class="best-seller__card-img"
+                src="./assets/main_page/high.png"
+                alt="img"
+              />
+              <div class="best-seller__card-text">
+                <h3 class="best-seller__card-title h3">High</h3>
+                <p class="best-seller__card-description p">крем для лица</p>
+                <a class="best-seller__card-link link" href="">Подробнее</a>
+              </div>
+            </div>
+            <div class="best-seller__card">
+              <img
+                class="best-seller__card-img"
+                src="./assets/main_page/rest.png"
+                alt="img"
+              />
+              <div class="best-seller__card-text">
+                <h3 class="best-seller__card-title h3">Rest</h3>
+                <p class="best-seller__card-description p">минеральная пудра</p>
+                <a class="best-seller__card-link link" href="">Подробнее</a>
+              </div>
+            </div>
+            <div class="best-seller__card">
+              <img
+                class="best-seller__card-img"
+                src="./assets/main_page/rose.png"
+                alt="img"
+              />
+              <div class="best-seller__card-text">
+                <h3 class="best-seller__card-title h3">Rose</h3>
+                <p class="best-seller__card-description p">крем для лица</p>
+                <a class="best-seller__card-link link" href="">Подробнее</a>
+              </div>
+            </div>
+            <div class="best-seller__card">
+              <img
+                class="best-seller__card-img"
+                src="./assets/main_page/milk.png"
+                alt="img"
+              />
+              <div class="best-seller__card-text">
+                <h3 class="best-seller__card-title h3">Milk</h3>
+                <p class="best-seller__card-description p">масло для тела</p>
+                <a class="best-seller__card-link link" href="">Подробнее</a>
+              </div>
+            </div>
+          </div>
+          <div class="best-seller__vector">
+            <button type="button" class="btn__vect btn__vect-right">
+              <img
+                class="best-seller__vector-img"
+                src="./assets/main_page/Vector4.png"
+                alt="arrow"
+              />
+            </button>
+            <button type="button" class="btn__vect btn__vect-left">
+              <img
+                class="best-seller__vector-img"
+                src="./assets/main_page/Vector3.png"
+                alt="arrow"
+              />
             </button>
           </div>
         </div>
@@ -135,12 +173,14 @@
       <div class="news">
         <div class="news__container">
           <div class="news__content">
-            <h2>Встречайте весну вместе с нами</h2>
-            <p>
+            <h2 class="news__title h2">Встречайте весну вместе с нами</h2>
+            <p class="news__description p">
               Попробуйте новую коллекцию ухаживающих средств для лица с SPF
               защитой
             </p>
-            <button class="btn" type="button">Подробнее</button>
+            <button class="news__button btn" type="button">
+              <a class="news__link link" href="">Подробнее</a>
+            </button>
           </div>
         </div>
       </div>

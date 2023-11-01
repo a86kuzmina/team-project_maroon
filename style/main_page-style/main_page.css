@@ -6,6 +6,7 @@ body {
 }
 
 .btn {
+  cursor: pointer;
   width: 141px;
   height: 41px;
   border-radius: 2px;
@@ -13,10 +14,10 @@ body {
   background-color: #F8F8F6;
   color: #122947;
   font-family: "M plus 1p", sans-serif;
-  font-size: 1rem;
+  font-size: 1.1rem;
   font-style: normal;
-  font-weight: 500;
-  line-height: 140%;
+  font-weight: 600;
+  line-height: 140%; /* 22.4px */
 }
 
 * a {
@@ -24,13 +25,13 @@ body {
   color: #122947;
 }
 
-* p {
+* .p {
   color: #122947;
   font-family: "M plus 1p", sans-serif;
   font-size: 1.2rem;
   font-style: normal;
   font-weight: 400;
-  line-height: 145%;
+  line-height: 145%; /* 26.1px */
 }
 
 h2 {
@@ -76,6 +77,7 @@ h3 {
 
 .link {
   text-decoration: none;
+  color: #122947;
 }
 
 .mainpage {
@@ -83,52 +85,53 @@ h3 {
   background-size: cover;
   width: 100%;
   height: 100vh;
-  display: grid;
+  display: flex;
   align-items: center;
 }
 .mainpage .mainpage__container {
   width: 80%;
   margin: auto;
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
+  display: flex;
 }
-.mainpage .mainpage__container .mainpage__img {
+.mainpage .mainpage__container .mainpage__item {
   min-width: 321px;
+  width: 30%;
+}
+.mainpage .mainpage__container .mainpage__item .mainpage__img {
   width: 100%;
 }
-.mainpage .mainpage__container .mainpage__img img {
-  width: 100%;
-}
-.mainpage .mainpage__container .mainpage__img .mainpage__img-text {
+.mainpage .mainpage__container .mainpage__item .mainpage__item-text {
   padding-top: 12px;
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
+  display: flex;
+  justify-content: space-between;
   align-items: center;
 }
-.mainpage .mainpage__container .mainpage__img .mainpage__img-text p {
-  grid-column: 1/2;
+.mainpage .mainpage__container .mainpage__item .mainpage__item-text .mainpage__description {
   color: #122947;
   font-family: "M plus 1p", sans-serif;
   font-size: 1.3rem;
   font-style: normal;
   font-weight: 500;
-  line-height: 140%;
+  line-height: 140%; /* 22.4px */
 }
-.mainpage .mainpage__container .mainpage__img .mainpage__img-text a {
-  grid-column: 2/3;
-  justify-self: end;
+.mainpage .mainpage__container .mainpage__item .mainpage__item-text .mainpage__link {
   width: 2rem;
   height: 12px;
 }
 .mainpage .mainpage__container .mainpage__text {
-  height: 55%;
-  padding-top: 58px;
-  display: grid;
+  transform: scale(1);
+  width: 35%;
+  display: flex;
+  flex-direction: column;
   text-align: center;
-  justify-items: center;
+  align-items: center;
+  padding-top: 3%;
 }
-.mainpage .mainpage__container .mainpage__text h1 {
-  margin-bottom: 0%;
+.mainpage .mainpage__container .mainpage__text .mainpage__description {
+  width: 100%;
+  margin-bottom: 6%;
+}
+.mainpage .mainpage__container .mainpage__text .h1 {
   color: #122947;
   font-family: "Raleway", sans-serif;
   font-size: 4rem;
@@ -140,7 +143,8 @@ h3 {
 .best-seller {
   width: 100%;
   height: 70vh;
-  display: grid;
+  display: flex;
+  flex-wrap: wrap;
   align-items: center;
 }
 .best-seller .best-seller__container {
@@ -154,57 +158,69 @@ h3 {
 .best-seller .best-seller__container .best-seller__text {
   align-self: center;
   grid-column: 1/2;
-  display: grid;
+  display: flex;
+  flex-direction: column;
   gap: 15px;
 }
-.best-seller .best-seller__container .best-seller__text p {
+.best-seller .best-seller__container .best-seller__text .best-seller__description {
   width: 214px;
   margin-bottom: 35px;
 }
-.best-seller .best-seller__container .best-seller__grCards {
+.best-seller .best-seller__container .best-seller__grcards {
   grid-column: 2/3;
-  display: grid;
-  grid-template-columns: repeat(4, 250px);
+  display: flex;
   gap: 30px;
   justify-content: center;
 }
-.best-seller .best-seller__container .best-seller__grCards .best-seller__card {
-  background-size: cover;
+.best-seller .best-seller__container .best-seller__grcards .best-seller__card {
+  display: flex;
+  position: relative;
+  justify-content: center;
   width: 100%;
   height: 100%;
-  display: grid;
-  text-align: center;
-  justify-content: center;
-  align-content: end;
-  gap: 8px;
+  gap: 8%;
 }
-.best-seller .best-seller__container .best-seller__grCards .best-seller__card p {
+.best-seller .best-seller__container .best-seller__grcards .best-seller__card .best-seller__card-img {
+  width: 100%;
+  height: 100%;
+  position: relative;
+}
+.best-seller .best-seller__container .best-seller__grcards .best-seller__card .best-seller__card-text {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: absolute;
+  bottom: 2%;
+}
+.best-seller .best-seller__container .best-seller__grcards .best-seller__card .best-seller__card-description {
+  margin: 5% 0%;
   color: #9A9DA0;
   font-family: "M plus 1p", sans-serif;
   font-size: 1rem;
   font-style: normal;
   font-weight: 400;
-  line-height: 145%;
+  line-height: 145%; /* 18.85px */
 }
-.best-seller .best-seller__container .best-seller__grCards .best-seller__card a {
+.best-seller .best-seller__container .best-seller__grcards .best-seller__card .best-seller__card-link {
   color: #122947;
   font-family: "M plus 1p", sans-serif;
   font-size: 0.9rem;
   font-style: normal;
   font-weight: 400;
-  line-height: 145%;
+  line-height: 145%; /* 18.85px */
   border-bottom: 1px solid;
   padding-bottom: 4px;
   margin-bottom: 25px;
 }
-.best-seller .best-seller__container .best-seller__img-vector {
+.best-seller .best-seller__container .best-seller__vector {
   grid-column: 2/3;
-  margin-right: 9rem;
+  margin-right: 2%;
   justify-self: end;
 }
-.best-seller .best-seller__container .best-seller__img-vector .btn_vect {
+.best-seller .best-seller__container .best-seller__vector .btn__vect {
   border: 0ch;
   background: none;
+  cursor: pointer;
 }
 
 .news {
@@ -213,22 +229,21 @@ h3 {
   width: 100%;
   height: 0%;
   padding-top: 28%;
-  display: grid;
+  display: flex;
   align-items: center;
 }
 .news .news__container {
   width: 71%;
   margin: auto;
-  display: grid;
-  grid-template-columns: 1fr 1fr minmax(min-content, max-content);
-  margin-top: -20%;
+  margin-top: -22%;
+  display: flex;
+  justify-content: flex-end;
 }
 .news .news__container .news__content {
-  width: 57%;
-  justify-self: end;
-  display: grid;
+  width: 29%;
+  display: flex;
+  flex-direction: column;
   gap: 2.2rem;
-  grid-column: 3/4;
 }
 
 .content1 {
