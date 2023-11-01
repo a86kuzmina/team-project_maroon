@@ -42,11 +42,15 @@
     <main>
       <div class="product">
         <div class="product__img">
-          <img src="./assets/card_product_1/Rectangle58.png" alt="Cream" />
+          <img
+            src="./assets/card_product_1/Rectangle58.png"
+            alt="Cream"
+            class="product__pic"
+          />
         </div>
         <div class="product__info">
-          <h2 class="product__title title">Rose</h2>
-          <p class="product__title-pale">крем для лица</p>
+          <h2 class="product__title title-medium">Rose</h2>
+          <p class="product__info-pale text-pale">крем для лица</p>
           <p class="product__description product__description-main">
             Увлажняющий крем идеально подходит для повседневного ухода за
             молодой кожей. Крем равномерно распределяется по поверхности
@@ -67,57 +71,88 @@
             ночного ухода.
           </p>
           <h3 class="product__title-mini title-mini">Объем:</h3>
-          <form action="/action_page.php">
-            <input type="radio" id="volume1" name="volume" value="50ml" />
-            <label for="volume1">50 ml</label>
-            <input type="radio" id="volume2" name="volume" value="30ml" />
-            <label for="volume2">30 ml</label>
-            <input type="submit" value="Добавить в корзину" class="btn" />
+          <form action="/action_page.php" class="form">
+            <input
+              type="radio"
+              id="volume1"
+              name="volume"
+              value="50ml"
+              class="form__info"
+            />
+            <label for="volume1" class="form__text">50 ml</label>
+            <input
+              type="radio"
+              id="volume2"
+              name="volume"
+              value="30ml"
+              class="form__info"
+            />
+            <label for="volume2" class="form__text">30 ml</label>
+            <input
+              type="submit"
+              value="Добавить в корзину"
+              class="form__button btn"
+            />
           </form>
         </div>
       </div>
-      <h3 class="title">Вам также может понравиться</h3>
-      <div class="catalog">
-        <div class="catalog__card card">
-          <img src="assets/card_product_1/Rectangle54.png"
-            alt="cosmetics" class="card__img"
-          />
-          <div class="card__info"></div>
-          <h3 class="card__title title-mini">Clean</h3>
-          <p class="card__price">490 &#8381;</p>
-          <p class="card__body">маска для лица</p>
-          <p class="card__weight">100g</p>
+      <div class="offer">
+        <h2 class="offer__title title-medium">Вам также может понравиться</h2>
+        <div class="offer__catalog">
+          <div class="offer__card card">
+            <img
+              src="assets/card_product_1/Rectangle54.png"
+              alt="cosmetics"
+              class="card__img"
+            />
+            <div class="card__info">
+              <h3 class="card__title title-mini">Clean</h3>
+              <p class="card__price text">490 &#8381;</p>
+              <p class="card__body text text-pale">маска для лица</p>
+              <p class="card__weight text text-pale">100g</p>
+            </div>
+          </div>
+          <div class="offer__card card">
+            <img
+              src="assets/card_product_1/Rectangle55.png"
+              alt="cosmetics"
+              class="card__img"
+            />
+            <div class="card__info">
+              <h3 class="card__title title-mini">Lotos</h3>
+              <p class="card__price text">890 &#8381;</p>
+              <p class="card__body text text-pale">маска для лица</p>
+              <p class="card__weight text text-pale">50ml</p>
+            </div>
+          </div>
+          <div class="offer__card card">
+            <img
+              src="assets/card_product_1/Rectangle56.png"
+              alt="cosmetics"
+              class="card__img"
+            />
+            <div class="card__info">
+              <h3 class="card__title title-mini">Lavander</h3>
+              <p class="card__price text">290 &#8381;</p>
+              <p class="card__body text text-pale">мыло ручной работы</p>
+              <p class="card__weight text text-pale">50g</p>
+            </div>
+          </div>
+          <div class="offer__card card">
+            <img
+              src="assets/card_product_1/Rectangle57.png"
+              alt="cosmetics"
+              class="card__img"
+            />
+            <div class="card__info">
+              <h3 class="card__title">Coconut</h3>
+              <p class="card__price text">990 &#8381;</p>
+              <p class="card__body text text-pale">масло для тела</p>
+              <p class="card__weight text text-pale">300ml</p>
+            </div>
+          </div>
         </div>
-        <div class="catalog__card card">
-          <img src="assets/card_product_1/Rectangle55.png"
-            alt="cosmetics" class="card__img"
-          />
-          <div class="card__info"></div>
-          <h3 class="card__title title-mini">Lotos</h3>
-          <p class="card__price">890 &#8381;</p>
-          <p class="card__body">маска для лица</p>
-          <p class="card__weight">50ml</p>
-        </div>
-        <div class="catalog__card card">
-          <img src="assets/card_product_1/Rectangle56.png"
-            alt="cosmetics" class="card__img"
-          />
-          <div class="card__info"></div>
-          <h3 class="card__title title-mini">Lavander</h3>
-          <p class="card__price">290 &#8381;</p>
-          <p class="card__body">мыло ручной работы</p>
-          <p class="card__weight">50g</p>
-        </div>
-        <div class="catalog__card card">
-          <img src="assets/card_product_1/Rectangle57.png"
-            alt="cosmetics" class="card__img"
-          />
-          <div class="card__info"></div>
-          <h3 class="card__title">Coconut</h3>
-          <p class="card__price">990 &#8381;</p>
-          <p class="card__body">масло для тела</p>
-          <p class="card__weight">300ml</p>
-        </div>
+      </div>
     </main>
     <footer class="footer">
       <div class="footer__top">
