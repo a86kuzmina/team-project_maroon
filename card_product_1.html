@@ -13,19 +13,29 @@
   <body>
     <header class="header">
       <div class="header__logo">
-        <img src="./assets/header/MAROON.png" class="logo__img" alt="Logo" />
+        <img
+          src="./assets/header/MAROON.png"
+          class="header__logo-img"
+          alt="Logo"
+        />
       </div>
-      <nav class="header__menu">
-        <a href="#" class="menu__link">Каталог</a>
-        <a href="#" class="menu__link">О нас</a>
-        <a href="#" class="menu__link">Контакты</a>
+      <nav class="menu header__menu">
+        <a href="#" class="menu__link link">Каталог</a>
+        <a href="#" class="menu__link link">О нас</a>
+        <a href="#" class="menu__link link">Контакты</a>
       </nav>
       <div class="header__img">
-        <a href="#" class="menu__link"
-          ><img src="/assets/header/body.png" class="link__img" alt="People"
+        <a href="#" class="header__link link"
+          ><img
+            src="/assets/header/body.png"
+            class="header__link-img"
+            alt="People"
         /></a>
-        <a href="#" class="menu__link"
-          ><img src="/assets/header/basket.png" class="link__img" alt="Basket"
+        <a href="#" class="header__link link"
+          ><img
+            src="/assets/header/basket.png"
+            class="header__link-img"
+            alt="Basket"
         /></a>
       </div>
     </header>
@@ -35,7 +45,7 @@
           <img src="./assets/card_product_1/Rectangle58.png" alt="Cream" />
         </div>
         <div class="product__info">
-          <h3 class="product__title">Rose</h3>
+          <h2 class="product__title title">Rose</h2>
           <p class="product__title-pale">крем для лица</p>
           <p class="product__description product__description-main">
             Увлажняющий крем идеально подходит для повседневного ухода за
@@ -43,20 +53,20 @@
             благодаря легкой текстуре, обеспечивает глубокое увлажнение,
             регенерацию клеток.
           </p>
-          <h4>Состав</h4>
+          <h3 class="product__title-mini title-mini">Состав</h3>
           <p class="product__description product__description_details">
             Aqua, Cyclomethicone, Dicaprylyl Carbonate, Butylene Glycol,
             Glycerin, Tapioca Starch, Nelumbium Speciosum Flower Extract,
             Calendula Officinalis Flower Extract, Propylene Glycol, Tocopherol,
             Glycine Soja Oil, Dimethiconol, Citronellol, Limonene.
           </p>
-          <h4>Способ применения</h4>
+          <h3 class="product__title-mini title-mini">Способ применения</h3>
           <p class="product__description product__description-details">
             Нанесите крем на очищенную кожу лица легкими массажными круговыми
             движениями, избегая области вокруг глаз. Подходит для дневного и
             ночного ухода.
           </p>
-          <h4>Объем:</h4>
+          <h3 class="product__title-mini title-mini">Объем:</h3>
           <form action="/action_page.php">
             <input type="radio" id="volume1" name="volume" value="50ml" />
             <label for="volume1">50 ml</label>
@@ -66,72 +76,93 @@
           </form>
         </div>
       </div>
-      <h3>Вам также может понравиться</h3>
+      <h3 class="title">Вам также может понравиться</h3>
       <div class="catalog">
-        <div
-          class="card"
-          style="background-image: url(assets/card_product_1/Rectangle54.png)"
-        >
-          <h4 class="card__title">Clean</h4>
+        <div class="catalog__card card">
+          <img src="assets/card_product_1/Rectangle54.png"
+            alt="cosmetics" class="card__img"
+          />
+          <div class="card__info"></div>
+          <h3 class="card__title title-mini">Clean</h3>
           <p class="card__price">490 &#8381;</p>
           <p class="card__body">маска для лица</p>
           <p class="card__weight">100g</p>
         </div>
-        <div
-          class="card"
-          style="background-image: url(assets/card_product_1/Rectangle55.png)"
-        >
-          <h4 class="card__title">Lotos</h4>
+        <div class="catalog__card card">
+          <img src="assets/card_product_1/Rectangle55.png"
+            alt="cosmetics" class="card__img"
+          />
+          <div class="card__info"></div>
+          <h3 class="card__title title-mini">Lotos</h3>
           <p class="card__price">890 &#8381;</p>
           <p class="card__body">маска для лица</p>
           <p class="card__weight">50ml</p>
         </div>
-        <div
-          class="card"
-          style="background-image: url(assets/card_product_1/Rectangle56.png)"
-        >
-          <h4 class="card__title">Lavander</h4>
+        <div class="catalog__card card">
+          <img src="assets/card_product_1/Rectangle56.png"
+            alt="cosmetics" class="card__img"
+          />
+          <div class="card__info"></div>
+          <h3 class="card__title title-mini">Lavander</h3>
           <p class="card__price">290 &#8381;</p>
           <p class="card__body">мыло ручной работы</p>
           <p class="card__weight">50g</p>
         </div>
-        <div
-          class="card"
-          style="background-image: url(assets/card_product_1/Rectangle57.png)"
-        >
-          <h4 class="card__title">Coconut</h4>
+        <div class="catalog__card card">
+          <img src="assets/card_product_1/Rectangle57.png"
+            alt="cosmetics" class="card__img"
+          />
+          <div class="card__info"></div>
+          <h3 class="card__title">Coconut</h3>
           <p class="card__price">990 &#8381;</p>
           <p class="card__body">масло для тела</p>
           <p class="card__weight">300ml</p>
         </div>
-      </div>
     </main>
     <footer class="footer">
       <div class="footer__top">
         <div class="footer__logo">
-          <img src="./assets/footer/MAROON.png" class="logo__img" alt="Logo" />
+          <img
+            src="./assets/footer/MAROON.png"
+            class="footer__logo-img"
+            alt="Logo"
+          />
         </div>
-        <nav class="footer__menu">
-          <a href="#" class="menu__link">Каталог</a>
-          <a href="#" class="menu__link">О нас</a>
-          <a href="#" class="menu__link">Магазины</a>
-          <a href="#" class="menu__link">Контакты</a>
+        <nav class="menu footer__menu">
+          <a href="#" class="menu__link link">Каталог</a>
+          <a href="#" class="menu__link link">О нас</a>
+          <a href="#" class="menu__link link">Магазины</a>
+          <a href="#" class="menu__link link">Контакты</a>
         </nav>
         <div class="footer__social">
-          <a href="#" class="social__link">
-            <img src="./assets/footer/facebook.png" alt="Facebook" />
+          <a href="#" class="footer__social-link link">
+            <img
+              src="./assets/footer/facebook.png"
+              class="footer__social-img"
+              alt="Facebook"
+            />
           </a>
-          <a href="#" class="social__link">
-            <img src="./assets/footer/insta.png" alt="Instagram" />
+          <a href="#" class="footer__social-link link">
+            <img
+              src="./assets/footer/insta.png"
+              class="footer__social-img"
+              alt="Instagram"
+            />
           </a>
-          <a href="#" class="social__link">
-            <img src="./assets/footer/twit.png" alt="Twitter" />
+          <a href="#" class="footer__social-link link">
+            <img
+              src="./assets/footer/twit.png"
+              class="footer__social-img"
+              alt="Twitter"
+            />
           </a>
         </div>
       </div>
       <div class="footer__bottom">
-        <div class="bottom__left">MAROON &copy; 2020 Все права защищены</div>
-        <div class="bottom__right">Политика конфиденциальности</div>
+        <div class="footer__bottom-left">
+          MAROON &copy; 2020 Все права защищены
+        </div>
+        <div class="footer__bottom-right">Политика конфиденциальности</div>
       </div>
     </footer>
   </body>
