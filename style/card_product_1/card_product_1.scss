@@ -1,15 +1,21 @@
 @import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@600&family=Poppins:wght@700&family=Raleway:wght@500&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=M+plus+1p:wght@400;500&display=swap');
-
 $Font1: 'Raleway', sans-serif;
 $Font2: 'M plus 1p', sans-serif;
+
 body {
     max-width: 100%;
     background-color: #F8F8F6; 
 }
-.link{
-    text-decoration: none;
-    color: #122947;
+h2 {
+    font-family: $Font1;
+    font-weight: 500;
+    font-size: 2rem;
+    text-align: center;
+}
+h3 {
+    font-weight: 500;
+    font-size: 1.2rem;
 }
 .btn{
     max-width: 215px;
@@ -25,15 +31,9 @@ body {
     margin-left: 5%;
     cursor: pointer;
 }
-.title-medium {
-    text-align: center;
-    font-family: $Font1;
-    font-weight: 500;
-    font-size: 2rem;
-}
-.title-mini {
-    font-weight: 500;
-    font-size: 1.2rem;
+.link{
+    text-decoration: none;
+    color: #122947;
 }
 .text {
     font-family: $Font2;
@@ -82,9 +82,19 @@ body {
     display: flex;
     width: 80%;
     margin: 5% auto;
+    font-family: $Font2;
+    font-size: 1rem;
+    font-weight: 400;
+    color: #122947;
+    @media (width <= 768px) {
+        flex-direction: column;
+    }
     .product__img {
         width: 50%;
         margin: auto;
+        @media (width <= 768px) {
+            width: 100%;;
+        }
         .product__pic {
             width: 100%;
         }
@@ -92,14 +102,39 @@ body {
     .product__info {
         width: 50%;
         margin-left: 10%;
-        font-family: $Font2;
-        font-size: 1rem;
-        font-weight: 400;
-        color: #122947;
+        @media (width <= 768px) {
+            width: 100%;
+            margin-left: 0;
+        }
+        .product__buy {
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+            margin-top: 3%;
+            .product__buy-volume {
+                display: flex;
+                align-items: center;
+                gap: 10%;
+            }
+            .product__buy-price {
+                display: flex;
+                align-items: center;
+                gap: 10%;
+            }
+            .product__buy-money {
+                font-family: $Font2;
+                font-size: 1.6rem;
+                font-weight: 500;
+            }
+        }
+    }
+    .product__title-mini {
+        padding-top: 3%;
     }
     .product__description {
         border-bottom: 1px solid #B3BAC1;
-        padding-bottom: 5%;
+        padding: 3% 0;
+        line-height: normal;
     }
     .product__description-main {
         font-size: 1.2rem;
@@ -115,6 +150,12 @@ body {
     grid-template-rows: auto;
     justify-content: space-between;
     gap: 30px;
+    @media (width <= 480px) {
+        .card:not(:first-child) {
+        display: none;
+        }
+        justify-content: center;
+    }
     .offer__card {
         display: flex;
         justify-content: center;
@@ -135,7 +176,7 @@ body {
             justify-content: space-between;
             align-items: center;
             bottom: 2%;
-            line-height: .1rem;
+            gap: 10px;
             .card__price {
                 font-weight: 500;
             }

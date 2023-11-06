@@ -4,10 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css"
-    />
+    <link rel="stylesheet" href="/style/reset200802.css" />
     <link rel="stylesheet" href="/style/card_product_1/card_product_1.css" />
   </head>
   <body>
@@ -49,7 +46,7 @@
           />
         </div>
         <div class="product__info">
-          <h2 class="product__title title-medium">Rose</h2>
+          <h2 class="product__title">Rose</h2>
           <p class="product__info-pale text-pale">крем для лица</p>
           <p class="product__description product__description-main">
             Увлажняющий крем идеально подходит для повседневного ухода за
@@ -57,43 +54,50 @@
             благодаря легкой текстуре, обеспечивает глубокое увлажнение,
             регенерацию клеток.
           </p>
-          <h3 class="product__title-mini title-mini">Состав</h3>
+          <h3 class="product__title-mini">Состав</h3>
           <p class="product__description product__description_details">
             Aqua, Cyclomethicone, Dicaprylyl Carbonate, Butylene Glycol,
             Glycerin, Tapioca Starch, Nelumbium Speciosum Flower Extract,
             Calendula Officinalis Flower Extract, Propylene Glycol, Tocopherol,
             Glycine Soja Oil, Dimethiconol, Citronellol, Limonene.
           </p>
-          <h3 class="product__title-mini title-mini">Способ применения</h3>
+          <h3 class="product__title-mini">Способ применения</h3>
           <p class="product__description product__description-details">
             Нанесите крем на очищенную кожу лица легкими массажными круговыми
             движениями, избегая области вокруг глаз. Подходит для дневного и
             ночного ухода.
           </p>
-          <h3 class="product__title-mini title-mini">Объем:</h3>
-          <form action="/action_page.php" class="form">
-            <input
-              type="radio"
-              id="volume1"
-              name="volume"
-              value="50ml"
-              class="form__info"
-            />
-            <label for="volume1" class="form__text">50 ml</label>
-            <input
-              type="radio"
-              id="volume2"
-              name="volume"
-              value="30ml"
-              class="form__info"
-            />
-            <label for="volume2" class="form__text">30 ml</label>
-            <input
-              type="submit"
-              value="Добавить в корзину"
-              class="form__button btn"
-            />
-          </form>
+          <div class="product__buy">
+            <div class="product__buy-volume">
+              <h3 class="product__buy-title">Объем:</h3>
+              <form action="/action_page.php" class="product__buy-form form">
+                <input
+                  type="radio"
+                  id="volume1"
+                  name="volume"
+                  value="50ml"
+                  class="form__info"
+                />
+                <label for="volume1" class="form__text">50 ml</label>
+                <input
+                  type="radio"
+                  id="volume2"
+                  name="volume"
+                  value="30ml"
+                  class="form__info"
+                />
+                <label for="volume2" class="form__text">30 ml</label>
+              </form>
+            </div>
+            <div class="product__buy-price">
+              <p class="product__buy-money">890 &#8381;</p>
+              <input
+                type="submit"
+                value="Добавить в корзину"
+                class="product__buy-button btn"
+              />
+            </div>
+          </div>
         </div>
       </div>
       <div class="offer">
@@ -106,7 +110,7 @@
               class="card__img"
             />
             <div class="card__info">
-              <h3 class="card__title title-mini">Clean</h3>
+              <h3 class="card__title">Clean</h3>
               <p class="card__price text">490 &#8381;</p>
               <p class="card__body text text-pale">маска для лица</p>
               <p class="card__weight text text-pale">100g</p>
@@ -119,7 +123,7 @@
               class="card__img"
             />
             <div class="card__info">
-              <h3 class="card__title title-mini">Lotos</h3>
+              <h3 class="card__title">Lotos</h3>
               <p class="card__price text">890 &#8381;</p>
               <p class="card__body text text-pale">маска для лица</p>
               <p class="card__weight text text-pale">50ml</p>
@@ -132,7 +136,7 @@
               class="card__img"
             />
             <div class="card__info">
-              <h3 class="card__title title-mini">Lavander</h3>
+              <h3 class="card__title">Lavander</h3>
               <p class="card__price text">290 &#8381;</p>
               <p class="card__body text text-pale">мыло ручной работы</p>
               <p class="card__weight text text-pale">50g</p>

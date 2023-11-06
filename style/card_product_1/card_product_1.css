@@ -5,9 +5,16 @@ body {
   background-color: #F8F8F6;
 }
 
-.link {
-  text-decoration: none;
-  color: #122947;
+h2 {
+  font-family: "Raleway", sans-serif;
+  font-weight: 500;
+  font-size: 2rem;
+  text-align: center;
+}
+
+h3 {
+  font-weight: 500;
+  font-size: 1.2rem;
 }
 
 .btn {
@@ -25,16 +32,9 @@ body {
   cursor: pointer;
 }
 
-.title-medium {
-  text-align: center;
-  font-family: "Raleway", sans-serif;
-  font-weight: 500;
-  font-size: 2rem;
-}
-
-.title-mini {
-  font-weight: 500;
-  font-size: 1.2rem;
+.link {
+  text-decoration: none;
+  color: #122947;
 }
 
 .text {
@@ -95,10 +95,24 @@ body {
   display: flex;
   width: 80%;
   margin: 5% auto;
+  font-family: "M plus 1p", sans-serif;
+  font-size: 1rem;
+  font-weight: 400;
+  color: #122947;
+}
+@media (width <= 768px) {
+  .product {
+    flex-direction: column;
+  }
 }
 .product .product__img {
   width: 50%;
   margin: auto;
+}
+@media (width <= 768px) {
+  .product .product__img {
+    width: 100%;
+  }
 }
 .product .product__img .product__pic {
   width: 100%;
@@ -106,14 +120,41 @@ body {
 .product .product__info {
   width: 50%;
   margin-left: 10%;
+}
+@media (width <= 768px) {
+  .product .product__info {
+    width: 100%;
+    margin-left: 0;
+  }
+}
+.product .product__info .product__buy {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  margin-top: 3%;
+}
+.product .product__info .product__buy .product__buy-volume {
+  display: flex;
+  align-items: center;
+  gap: 10%;
+}
+.product .product__info .product__buy .product__buy-price {
+  display: flex;
+  align-items: center;
+  gap: 10%;
+}
+.product .product__info .product__buy .product__buy-money {
   font-family: "M plus 1p", sans-serif;
-  font-size: 1rem;
-  font-weight: 400;
-  color: #122947;
+  font-size: 1.6rem;
+  font-weight: 500;
+}
+.product .product__title-mini {
+  padding-top: 3%;
 }
 .product .product__description {
   border-bottom: 1px solid #B3BAC1;
-  padding-bottom: 5%;
+  padding: 3% 0;
+  line-height: normal;
 }
 .product .product__description-main {
   font-size: 1.2rem;
@@ -129,6 +170,14 @@ body {
   grid-template-rows: auto;
   justify-content: space-between;
   gap: 30px;
+}
+@media (width <= 480px) {
+  .offer__catalog {
+    justify-content: center;
+  }
+  .offer__catalog .card:not(:first-child) {
+    display: none;
+  }
 }
 .offer__catalog .offer__card {
   display: flex;
@@ -151,7 +200,7 @@ body {
   justify-content: space-between;
   align-items: center;
   bottom: 2%;
-  line-height: 0.1rem;
+  gap: 10px;
 }
 .offer__catalog .offer__card .card__info .card__price {
   font-weight: 500;
